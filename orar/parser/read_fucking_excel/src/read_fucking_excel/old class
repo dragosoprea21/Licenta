@@ -27,9 +27,8 @@ public class ReadExcel {
 	            
 	            System.out.println("{");
 	            
-	            int serieSet = 0;
+	            int serieSet = 1;
 	            int newSeries = 1;
-	            int newGroup = 1;
 	            int newCourse = 1;
 	            
                 while (rowIterator.hasNext()) {
@@ -53,10 +52,10 @@ public class ReadExcel {
                             continue;
                         }
                         /* setare serie */
-                        if (serieSet == 0) {
+                        if (serieSet == 1) {
                         	System.out.println("\t\"" + cellValue.charAt(0) + "\" : {");
                             System.out.println("\t\t\"" + cellValue.substring(1,3) + "\" : {");
-                            serieSet = 1;
+                            serieSet = 0;
                             break;
                         }
                         
@@ -78,18 +77,18 @@ public class ReadExcel {
                         			if (cellValue.equals("313s1")) {
                         				System.out.println("},\n\t\t\t\"" + cellValue + "\" : {");
                         			} else {
-                        				System.out.println("}\n},\n\t\t\t\"" + cellValue + "\" : {");
+                        				System.out.println("\t\t\t\t}\n\t\t\t},\n\t\t\t\"" + cellValue + "\" : {");
                         			}
                         		}
                         	} else {
                         		if (numColls == 1) {
                             	ora = cellValue;
                         	} else if (numColls == 2) {
-                        		numeMaterie = cellValue;
+                        		numeMaterie = cellValue.split("-")[0];
                         		if (newCourse == 1) {
                             		System.out.println("\t\t\t\t\t\"" + cellValue + "\" : {");
                             		newCourse = 0;
-                        		} else {
+                        		} else { /* virgula dinainte de materie */
                         			System.out.println(",\n\t\t\t\t\t\"" + cellValue + "\" : {");
                         		}
                         	} else if (numColls == 3) {
@@ -112,8 +111,7 @@ public class ReadExcel {
                         		System.out.println("\t\t\t\t\t\t\"place\" : \"" + cellValue + "\",");
                         	} else if (numColls == 5) {
                         		/* tip */
-                        		System.out.println("\t\t\t\t\t\t\"type\" : \"" + cellValue + "\"\n"
-                        				+ "\t\t\t\t\t}");
+                        		System.out.println("\t\t\t\t\t\t\"type\" : \"" + cellValue + "\"\n\t\t\t\t\t}");
                         	}
                         }
                         
