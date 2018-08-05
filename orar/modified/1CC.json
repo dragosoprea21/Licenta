@@ -1,9 +1,9 @@
 {
-	"1" : {
-		"CC" : {
-			"313s1" : {
+	"1CC" : {
+		"311CC" : {
+			"311CC1" : {
 				"Luni" : {
-					"Metode Numerice-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "11:00",
 						"item" : "Metode Numerice",
@@ -12,7 +12,7 @@
 						"type" : "curs"
 					}
 ,
-					"Structuri de Date-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Structuri de Date",
@@ -20,27 +20,9 @@
 						"place" : "EC004",
 						"type" : "curs"
 					}
-,
-					"Metode Numerice" : {
-						"startTime" : "16:00",
-						"endTime" : "18:00",
-						"item" : "Metode Numerice",
-						"professor" : "-",
-						"place" : "EG403",
-						"type" : "lab"
-					}
-,
-					"Structuri de Date" : {
-						"startTime" : "18:00",
-						"endTime" : "20:00",
-						"item" : "Structuri de Date",
-						"professor" : "-",
-						"place" : "EG105",
-						"type" : "lab"
-					}
 				},
 				"Marti" : {
-					"Sport-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "10:00",
 						"item" : "Sport",
@@ -49,7 +31,7 @@
 						"type" : "curs"
 					}
 ,
-					"Matematica 3-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Matematica 3",
@@ -59,7 +41,7 @@
 					}
 				},
 				"Miercuri" : {
-					"Fizica-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "11:00",
 						"item" : "Fizica",
@@ -68,7 +50,7 @@
 						"type" : "curs"
 					}
 ,
-					"Electrotehnica-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Electrotehnica",
@@ -77,9 +59,9 @@
 						"type" : "curs"
 					}
 ,
-					"Engleza" : {
-						"startTime" : "18:00",
-						"endTime" : "20:00",
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
 						"item" : "Engleza",
 						"professor" : "-",
 						"place" : "AN217",
@@ -87,7 +69,16 @@
 					}
 				},
 				"Joi" : {
-					"Matematica 3" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+,
+					"item2" : {
 						"startTime" : "10:00",
 						"endTime" : "12:00",
 						"item" : "Matematica 3",
@@ -96,18 +87,9 @@
 						"type" : "seminar"
 					}
 ,
-					"Electrotehnica" : {
+					"item3" : {
 						"startTime" : "12:00",
 						"endTime" : "14:00",
-						"item" : "Electrotehnica",
-						"professor" : "-",
-						"place" : "EB214",
-						"type" : "lab"
-					}
-,
-					"Fizica" : {
-						"startTime" : "14:00",
-						"endTime" : "16:00",
 						"item" : "Fizica",
 						"professor" : "-",
 						"place" : "BN120",
@@ -115,7 +97,25 @@
 					}
 				},
 				"Vineri" : {
-					"Optional-curs" : {
+					"item1" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG105",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG205",
+						"type" : "lab"
+					}
+,
+					"item3" : {
 						"startTime" : "14:00",
 						"endTime" : "16:00",
 						"item" : "Optional",
@@ -124,7 +124,7 @@
 						"type" : "curs"
 					}
 ,
-					"Pedagogie-curs" : {
+					"item4" : {
 						"startTime" : "16:00",
 						"endTime" : "18:00",
 						"item" : "Pedagogie",
@@ -133,7 +133,7 @@
 						"type" : "curs"
 					}
 ,
-					"Pedagogie" : {
+					"item5" : {
 						"startTime" : "18:00",
 						"endTime" : "20:00",
 						"item" : "Pedagogie",
@@ -143,9 +143,9 @@
 					}
 				}
 			},
-			"313s2" : {
+			"311CC2" : {
 				"Luni" : {
-					"Metode Numerice-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "11:00",
 						"item" : "Metode Numerice",
@@ -154,7 +154,7 @@
 						"type" : "curs"
 					}
 ,
-					"Structuri de Date-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Structuri de Date",
@@ -162,27 +162,9 @@
 						"place" : "EC004",
 						"type" : "curs"
 					}
-,
-					"Metode Numerice" : {
-						"startTime" : "14:00",
-						"endTime" : "16:00",
-						"item" : "Metode Numerice",
-						"professor" : "-",
-						"place" : "EG403",
-						"type" : "lab"
-					}
-,
-					"Structuri de Date" : {
-						"startTime" : "16:00",
-						"endTime" : "18:00",
-						"item" : "Structuri de Date",
-						"professor" : "-",
-						"place" : "EG105",
-						"type" : "lab"
-					}
 				},
 				"Marti" : {
-					"Sport-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "10:00",
 						"item" : "Sport",
@@ -191,7 +173,7 @@
 						"type" : "curs"
 					}
 ,
-					"Matematica 3-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Matematica 3",
@@ -201,7 +183,7 @@
 					}
 				},
 				"Miercuri" : {
-					"Fizica-curs" : {
+					"item1" : {
 						"startTime" : "08:00",
 						"endTime" : "11:00",
 						"item" : "Fizica",
@@ -210,7 +192,7 @@
 						"type" : "curs"
 					}
 ,
-					"Electrotehnica-curs" : {
+					"item2" : {
 						"startTime" : "11:00",
 						"endTime" : "14:00",
 						"item" : "Electrotehnica",
@@ -219,7 +201,455 @@
 						"type" : "curs"
 					}
 ,
-					"Engleza" : {
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Engleza",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item3" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG105",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG205",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item5" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			}
+		},
+		"312CC" : {
+			"312CC1" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Engleza",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN213",
+						"type" : "seminar"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG404",
+						"type" : "lab"
+					}
+,
+					"item5" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			},
+			"312CC2" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Engleza",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN213",
+						"type" : "seminar"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+,
+					"item5" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG404",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			}
+		},
+		"313CC" : {
+			"313CC1" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+,
+					"item4" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG105",
+						"type" : "lab"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
 						"startTime" : "18:00",
 						"endTime" : "20:00",
 						"item" : "Engleza",
@@ -229,7 +659,7 @@
 					}
 				},
 				"Joi" : {
-					"Matematica 3" : {
+					"item1" : {
 						"startTime" : "10:00",
 						"endTime" : "12:00",
 						"item" : "Matematica 3",
@@ -238,7 +668,7 @@
 						"type" : "seminar"
 					}
 ,
-					"Electrotehnica" : {
+					"item2" : {
 						"startTime" : "12:00",
 						"endTime" : "14:00",
 						"item" : "Electrotehnica",
@@ -247,7 +677,7 @@
 						"type" : "lab"
 					}
 ,
-					"Fizica" : {
+					"item3" : {
 						"startTime" : "14:00",
 						"endTime" : "16:00",
 						"item" : "Fizica",
@@ -257,7 +687,7 @@
 					}
 				},
 				"Vineri" : {
-					"Optional-curs" : {
+					"item1" : {
 						"startTime" : "14:00",
 						"endTime" : "16:00",
 						"item" : "Optional",
@@ -266,7 +696,7 @@
 						"type" : "curs"
 					}
 ,
-					"Pedagogie-curs" : {
+					"item2" : {
 						"startTime" : "16:00",
 						"endTime" : "18:00",
 						"item" : "Pedagogie",
@@ -275,7 +705,435 @@
 						"type" : "curs"
 					}
 ,
-					"Pedagogie" : {
+					"item3" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			},
+			"313CC2" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG105",
+						"type" : "lab"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Engleza",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item2" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item3" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			}
+		},
+		"314CC" : {
+			"314CC1" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Germana",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item4" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG404",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item5" : {
+						"startTime" : "18:00",
+						"endTime" : "20:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+				}
+			},
+			"314CC2" : {
+				"Luni" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Metode Numerice",
+						"professor" : "Florin Pop",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Structuri de Date",
+						"professor" : "Stefan Radu",
+						"place" : "EC004",
+						"type" : "curs"
+					}
+				},
+				"Marti" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Sport",
+						"professor" : "Alexandru Paun",
+						"place" : "Sala Sport",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Matematica 3",
+						"professor" : "Radu Constantin",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Miercuri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "11:00",
+						"item" : "Fizica",
+						"professor" : "Adrian Radu",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item2" : {
+						"startTime" : "11:00",
+						"endTime" : "14:00",
+						"item" : "Electrotehnica",
+						"professor" : "Daniel Niculae",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+				},
+				"Joi" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Matematica 3",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Fizica",
+						"professor" : "-",
+						"place" : "BN120",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "12:00",
+						"endTime" : "14:00",
+						"item" : "Germana",
+						"professor" : "-",
+						"place" : "AN217",
+						"type" : "seminar"
+					}
+,
+					"item4" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Electrotehnica",
+						"professor" : "-",
+						"place" : "EB214",
+						"type" : "lab"
+					}
+				},
+				"Vineri" : {
+					"item1" : {
+						"startTime" : "08:00",
+						"endTime" : "10:00",
+						"item" : "Structuri de Date",
+						"professor" : "-",
+						"place" : "EG404",
+						"type" : "lab"
+					}
+,
+					"item2" : {
+						"startTime" : "10:00",
+						"endTime" : "12:00",
+						"item" : "Metode Numerice",
+						"professor" : "-",
+						"place" : "EG403",
+						"type" : "lab"
+					}
+,
+					"item3" : {
+						"startTime" : "14:00",
+						"endTime" : "16:00",
+						"item" : "Optional",
+						"professor" : "Nicoleta Arghira",
+						"place" : "AN030",
+						"type" : "curs"
+					}
+,
+					"item4" : {
+						"startTime" : "16:00",
+						"endTime" : "18:00",
+						"item" : "Pedagogie",
+						"professor" : "Simona Gabureanu",
+						"place" : "AN030",
+						"type" : "seminar"
+					}
+,
+					"item5" : {
 						"startTime" : "18:00",
 						"endTime" : "20:00",
 						"item" : "Pedagogie",
