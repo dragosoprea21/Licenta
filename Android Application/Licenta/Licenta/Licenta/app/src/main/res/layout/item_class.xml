@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_class_layout"
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:layout_marginBottom="8dp"
@@ -66,6 +67,7 @@
             android:ellipsize="end"
             android:fontFamily="sans-serif-medium"
             android:lines="1"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
             tools:text="Name" />
 
@@ -76,6 +78,7 @@
             android:layout_marginTop="5dp"
             android:ellipsize="end"
             android:lines="1"
+            android:textColor="@android:color/white"
             tools:text="Prof" />
 
         <TextView
@@ -85,6 +88,7 @@
             android:alpha="0.7"
             android:ellipsize="end"
             android:lines="1"
+            android:textColor="@android:color/white"
             android:textSize="12sp"
             tools:text="Place" />
 
@@ -92,7 +96,8 @@
             android:id="@+id/type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Type" />
+            android:text="Type"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 
 </LinearLayout>

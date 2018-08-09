@@ -43,6 +43,8 @@ public class TimetableActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private ArrayList<String> stringsSelectedFromMainActivityGrupa;
     private ArrayList<String> stringsSelectedFromMainActivitySemigrupa;
+    private ArrayList<String> stringsSelectedFromMainActivitySerie;
+    private ArrayList<String> stringsSelectedFromMainActivityAn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,8 @@ public class TimetableActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        stringsSelectedFromMainActivityAn = getIntent().getExtras().getStringArrayList("myKeysAn");
+        stringsSelectedFromMainActivitySerie = getIntent().getExtras().getStringArrayList("myKeysSerie");
         stringsSelectedFromMainActivityGrupa=getIntent().getExtras().getStringArrayList("myKeysGrupa");
         stringsSelectedFromMainActivitySemigrupa = getIntent().getExtras().getStringArrayList("myKeysSemigrupa");
 
@@ -82,9 +86,9 @@ public class TimetableActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_filters) {
+        /*if (id == R.id.action_filters) {
             return true;
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }
@@ -95,5 +99,13 @@ public class TimetableActivity extends AppCompatActivity {
 
     public  ArrayList<String> getChoiceSemigrupa() {
         return stringsSelectedFromMainActivitySemigrupa;
+    }
+
+    public  ArrayList<String> getChoiceAn() {
+        return stringsSelectedFromMainActivityAn;
+    }
+
+    public  ArrayList<String> getChoiceSerie() {
+        return stringsSelectedFromMainActivitySerie;
     }
 }

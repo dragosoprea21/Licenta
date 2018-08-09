@@ -55,7 +55,7 @@ public class Thursday extends android.support.v4.app.Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewThursday);
         LinearLayoutManager lin = new LinearLayoutManager(getContext());
-        adapter = new ClassAdapter(timetableItems);
+        adapter = new ClassAdapter(getContext(),timetableItems);
         lin.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setHasFixedSize(true);
 
@@ -70,10 +70,14 @@ public class Thursday extends android.support.v4.app.Fragment {
 
     public void populateView() {
         TimetableActivity activity = (TimetableActivity) getActivity();
+
+        ArrayList<String> keysSelectedAn = activity.getChoiceAn();
+        ArrayList<String> keysSelectedSerie = activity.getChoiceSerie();
         ArrayList<String> keysSelectedGrupa = activity.getChoiceGrupa();
         ArrayList<String> keysSelectedSemigrupa = activity.getChoiceSemigrupa();
-        String an = keysSelectedGrupa.get(0).substring(1,2);
-        String serie = keysSelectedGrupa.get(0).substring(3,5);
+
+        String an = keysSelectedAn.get(0);
+        String serie = keysSelectedSerie.get(0);
         String concatenare = an.concat(serie);
 
         reference = FirebaseDatabase.getInstance().getReference(concatenare).child(keysSelectedGrupa.get(0)).child(keysSelectedSemigrupa.get(0)).child("Joi");

@@ -2,9 +2,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.proiect.licenta.TimetableActivity">
-    <item
-        android:id="@+id/action_filters"
-        android:orderInCategory="100"
-        android:title="Filtre"
-        app:showAsAction="never" />
 </menu>

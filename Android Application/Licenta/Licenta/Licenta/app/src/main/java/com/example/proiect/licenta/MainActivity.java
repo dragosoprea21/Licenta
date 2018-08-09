@@ -13,10 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
 
 
@@ -37,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         btnChangeActivity = (Button) findViewById(R.id.btnSelect);
         choiceTextGrupa = (EditText) findViewById(R.id.mychoiceGrupa);
         choiceTextSemigrupa = (EditText) findViewById(R.id.mychoiceSemigrupa);
@@ -51,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final CharSequence[] values = {"1","2","3","4"};
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MaterialThemeDialog);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this,R.style.MaterialThemeDialog);
 
                 builder.setTitle("Selecteaza anul:");
                 stringsSelectedAn = new ArrayList<String>();
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                         switch (item) {
                             case 0:
                                 choiceTextAn.setText(values[0]);
-                                Toast.makeText(getApplicationContext(), choiceTextAn.getText().toString(), Toast.LENGTH_SHORT).show();
                                 stringsSelectedAn.add(choiceTextAn.getText().toString());
                                 break;
                             case 1:
@@ -135,17 +132,14 @@ public class MainActivity extends AppCompatActivity {
         choiceTextGrupa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final CharSequence[] altceva = new String[4];
+                final CharSequence[] grupa = new String[4];
                 String anSelected = choiceTextAn.getText().toString();
-                Toast.makeText(getApplicationContext(), anSelected, Toast.LENGTH_SHORT).show();
                 String serieSelected = choiceTextSerie.getText().toString();
-                Toast.makeText(getApplicationContext(), serieSelected, Toast.LENGTH_SHORT).show();
                 for(int i = 0; i < 4; i++) {
-                    altceva[i] = "3" + anSelected + (i+1) +serieSelected;
-                    Toast.makeText(getApplicationContext(), altceva[i].toString(), Toast.LENGTH_SHORT).show();
+                    grupa[i] = "3" + anSelected + (i+1) +serieSelected;
                 }
 
-                final CharSequence[] values = altceva;
+                final CharSequence[] values = grupa;
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MaterialThemeDialog);
 
                 builder.setTitle("Selecteaza o grupa:");
@@ -187,12 +181,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String grupaSelected = choiceTextGrupa.getText().toString();
-                CharSequence[] altceva = new String[2];
+                CharSequence[] semigrupa = new String[2];
                 for(int i = 0; i < 2; i++) {
-                    altceva[i] = grupaSelected + (i+1);
+                    semigrupa[i] = grupaSelected + (i+1);
                 }
 
-                final CharSequence[] values = altceva;
+                final CharSequence[] values = semigrupa;
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MaterialThemeDialog);
 
                 builder.setTitle("Selecteaza o semigrupa:");
@@ -232,6 +226,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
                 intent.putStringArrayListExtra("myKeysGrupa", stringsSelectedGrupa);
                 intent.putStringArrayListExtra("myKeysSemigrupa", stringsSelectedSemigrupa);
+                intent.putStringArrayListExtra("myKeysAn", stringsSelectedAn);
+                intent.putStringArrayListExtra("myKeysSerie", stringsSelectedSerie);
                 startActivity(intent);
             }
         });

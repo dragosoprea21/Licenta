@@ -1,5 +1,11 @@
 package com.example.proiect.licenta.Utils;
 
+import android.annotation.TargetApi;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DividerItemDecoration;
@@ -11,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.proiect.licenta.Messaging.MyNotificationManager;
 import com.example.proiect.licenta.R;
 import com.example.proiect.licenta.TimetableActivity;
 import com.google.firebase.database.ChildEventListener;
@@ -27,7 +34,7 @@ import java.util.List;
  * Created by Dona on 23/07/2018.
  */
 
-public class Monday extends android.support.v4.app.Fragment {
+public class Monday extends android.support.v4.app.Fragment implements OreoApiHandler {
 
     private static final String ARG_PARAM = "timetable";
     private RecyclerView recyclerView;
@@ -56,7 +63,7 @@ public class Monday extends android.support.v4.app.Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewMonday);
         LinearLayoutManager lin = new LinearLayoutManager(getContext());
-        adapter = new ClassAdapter(timetableItems);
+        adapter = new ClassAdapter(getContext(),timetableItems);
         lin.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setHasFixedSize(true);
 
@@ -71,13 +78,19 @@ public class Monday extends android.support.v4.app.Fragment {
 
     public void populateView() {
         TimetableActivity activity = (TimetableActivity) getActivity();
+
+        ArrayList<String> keysSelectedAn = activity.getChoiceAn();
+        ArrayList<String> keysSelectedSerie = activity.getChoiceSerie();
         ArrayList<String> keysSelectedGrupa = activity.getChoiceGrupa();
         ArrayList<String> keysSelectedSemigrupa = activity.getChoiceSemigrupa();
-        String an = keysSelectedGrupa.get(0).substring(1,2);
-        String serie = keysSelectedGrupa.get(0).substring(3,5);
+
+        String an = keysSelectedAn.get(0);
+        String serie = keysSelectedSerie.get(0);
+        final String grupa = keysSelectedGrupa.get(0);
+        String semigrupa = keysSelectedSemigrupa.get(0);
         String concatenare = an.concat(serie);
 
-        reference = FirebaseDatabase.getInstance().getReference(concatenare).child(keysSelectedGrupa.get(0)).child(keysSelectedSemigrupa.get(0)).child("Luni");
+        reference = FirebaseDatabase.getInstance().getReference(concatenare).child(grupa).child(semigrupa).child("Luni");
         reference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -90,6 +103,7 @@ public class Monday extends android.support.v4.app.Fragment {
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
                 TimetableItem item = dataSnapshot.getValue(TimetableItem.class);
+                MyNotificationManager.getInstance(getContext()).displayNotification("Actualizare noua!" ,"Orarul pentru grupa " + grupa + " a fost modificat." );
             }
 
             @Override
@@ -108,5 +122,23 @@ public class Monday extends android.support.v4.app.Fragment {
             }
         });
     }
+
+    @Override
+    @TargetApi(Build.VERSION_CODES.O)
+    public void oreoApi() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationManager mNotificationManager =
+                    (NotificationManager) getContext().getSystemService(Context.NOTIFICATION_SERVICE);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel mChannel = new NotificationChannel(Constants.CHANNEL_ID, Constants.CHANNEL_NAME, importance);
+            mChannel.setDescription(Constants.CHANNEL_DESCRIPTION);
+            mChannel.enableLights(true);
+            mChannel.setLightColor(Color.RED);
+            mChannel.enableVibration(true);
+            mChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+            mNotificationManager.createNotificationChannel(mChannel);
+        }
+    }
+
 }
 
