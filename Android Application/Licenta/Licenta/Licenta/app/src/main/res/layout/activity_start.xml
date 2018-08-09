@@ -10,32 +10,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="10"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="5dp">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2.5"/>
 
         <ImageView
             android:id="@+id/imageLogo"
             android:layout_width="239dp"
-            android:layout_height="212dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
             android:src="@drawable/logo"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:scaleType="fitStart"
+            android:layout_weight="0.5"/>
 
         <TextView
             android:id="@+id/textLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
             android:text="PoliOrar"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:scaleType="fitStart"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 

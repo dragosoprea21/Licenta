@@ -20,19 +20,35 @@
             app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
         <TextView
+            android:id="@+id/customViewCurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Curs:"
+            android:textSize="24sp" />
+
+        <TextView
             android:id="@+id/customViewProffesor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="20dp"
             android:text="Profesor:"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/customViewSala"
+            android:id="@+id/customViewCorpCladire"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
-            android:text="Sala:"
+            android:layout_marginTop="20dp"
+            android:text="Corp Cladire:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/customViewEtaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Etaj:"
             android:textSize="24sp" />
 
 
@@ -40,7 +56,7 @@
             android:id="@+id/customViewDirectii"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/map"
             android:text="Directii"
             android:textAlignment="center" />

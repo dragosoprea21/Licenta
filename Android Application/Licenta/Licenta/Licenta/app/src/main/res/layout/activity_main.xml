@@ -30,7 +30,7 @@
         android:layout_marginTop="35dp"
         android:layout_weight="1"
         android:background="@drawable/round_edit_text"
-        android:hint="  Semigrupa:"
+        android:hint="  Semigrupa"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"

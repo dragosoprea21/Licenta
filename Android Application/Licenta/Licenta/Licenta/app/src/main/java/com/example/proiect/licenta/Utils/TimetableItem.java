@@ -77,6 +77,16 @@ public class TimetableItem implements Parcelable {
         this.type = type;
     }
 
+    /* make seter & geter */
+    public String getCorp() {
+        return getPlace().substring(0,2);
+    }
+
+    public String getEtaj() {
+        return getPlace().substring(2,3);
+    }
+
+
     public int describeContents() {
         return 0;
     }

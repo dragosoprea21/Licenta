@@ -73,8 +73,10 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.ViewHolder>{
         viewHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TextView customViewCurs = (TextView) myDialog.findViewById(R.id.customViewCurs);
                 TextView customViewProf = (TextView) myDialog.findViewById(R.id.customViewProffesor);
-                TextView customViewSala = (TextView) myDialog.findViewById(R.id.customViewSala);
+                TextView customViewCladire = (TextView) myDialog.findViewById(R.id.customViewCorpCladire);
+                TextView customViewEtaj = (TextView) myDialog.findViewById(R.id.customViewEtaj);
                 Button btnDirectii = (Button) myDialog.findViewById(R.id.customViewDirectii);
                 ImageButton closeDialog = (ImageButton) myDialog.findViewById(R.id.imageButtonClose);
 
@@ -93,8 +95,10 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.ViewHolder>{
                     }
                 });
 
+                customViewCurs.setText(timeTableItemList.get(viewHolder.getAdapterPosition()).getItem());
                 customViewProf.setText(timeTableItemList.get(viewHolder.getAdapterPosition()).getProfessor());
-                customViewSala.setText(timeTableItemList.get(viewHolder.getAdapterPosition()).getPlace());
+                customViewCladire.setText(timeTableItemList.get(viewHolder.getAdapterPosition()).getCorp());
+                customViewEtaj.setText(timeTableItemList.get(viewHolder.getAdapterPosition()).getEtaj());
                 myDialog.show();
             }
         });
