@@ -44,7 +44,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="15dp"
-            android:text="PoliOrar"
+            android:text="PoliTable"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold"
