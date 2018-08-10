@@ -25,7 +25,7 @@ import java.util.ArrayList;
  * Created by Dona on 23/07/2018.
  */
 
-public class Wendsady extends android.support.v4.app.Fragment {
+public class Wednesday extends android.support.v4.app.Fragment {
 
     private static final String ARG_PARAM = "timetable";
     private RecyclerView recyclerView;
@@ -34,12 +34,12 @@ public class Wendsady extends android.support.v4.app.Fragment {
     public ClassAdapter adapter;
     private ArrayList<TimetableItem> timetableItems = new ArrayList<TimetableItem>();
 
-    public Wendsady() {
+    public Wednesday() {
 
     }
 
-    public static Wendsady newInstance(ArrayList<TimetableItem> timetableItems) {
-        Wendsady fragment = new Wendsady();
+    public static Wednesday newInstance(ArrayList<TimetableItem> timetableItems) {
+        Wednesday fragment = new Wednesday();
         Bundle args = new Bundle();
         args.putParcelableArrayList(ARG_PARAM, timetableItems);
         fragment.setArguments(args);

@@ -28,8 +28,8 @@ public class DayPagesAdapter extends FragmentStatePagerAdapter {
                 Fragment fragmentTuesday = Tuesday.newInstance(timetableItems);
                 return fragmentTuesday;
             case 2:
-                Fragment fragmentWendsady = Wendsady.newInstance(timetableItems);
-                return fragmentWendsady;
+                Fragment fragmentWednesday = Wednesday.newInstance(timetableItems);
+                return fragmentWednesday;
             case 3:
                 Fragment fragmentThursday = Thursday.newInstance(timetableItems);
                 return fragmentThursday;

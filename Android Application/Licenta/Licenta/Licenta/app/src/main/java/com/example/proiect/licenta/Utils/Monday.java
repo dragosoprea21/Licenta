@@ -103,8 +103,8 @@ public class Monday extends android.support.v4.app.Fragment implements OreoApiHa
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
                 TimetableItem item = dataSnapshot.getValue(TimetableItem.class);
-                oreoApi();
-                MyNotificationManager.getInstance(getContext()).displayNotification("Actualizare noua!" ,"Orarul pentru grupa " + grupa + " a fost modificat." );
+                oreoNotificationApi.oreoApi(getContext());
+                MyNotificationManager.getInstance(getContext()).displayNotification("Actualizare noua!" ,"Orarul pentru grupa " + grupa + ", ziua Luni, a fost modificat." );
             }
 
             @Override

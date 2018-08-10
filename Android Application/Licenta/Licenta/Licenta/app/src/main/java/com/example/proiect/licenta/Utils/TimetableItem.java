@@ -79,11 +79,25 @@ public class TimetableItem implements Parcelable {
 
     /* make seter & geter */
     public String getCorp() {
-        return getPlace().substring(0,2);
+
+        if (getPlace().length() > 5) {
+            return "Campus";
+        }
+
+        String corp = getPlace().substring(0,2);
+        return "Corp: " + corp;
     }
 
     public String getEtaj() {
-        return getPlace().substring(2,3);
+        if (getPlace().length() > 5) {
+            return "Sala Sport";
+        }
+
+        String etaj = getPlace().substring(2,3);
+        if (etaj.equals('0'))
+            return "Parter";
+        else
+            return "Etaj: " + etaj;
     }
 
 
